@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./job.component.scss']
 })
 export class JobComponent implements OnInit {
-  public mostrarTelas: boolean = false;
+  public mostrarTelas: boolean = true;
   currentSection = 'home';
   public isCollapsed = true;
 
