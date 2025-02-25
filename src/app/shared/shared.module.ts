@@ -7,7 +7,6 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 // Counter
 import { CountUpModule } from 'ngx-countup';
-
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { ScrollspyDirective } from './scrollspy.directive';
 import { LandingScrollspyDirective } from './landingscrollspy.directive';
@@ -19,7 +18,6 @@ import { CandidatesComponent } from './landing/job/candidates/candidates.compone
 import { BlogComponent } from './landing/job/blog/blog.component';
 import { JobcategoriesComponent } from './landing/job/jobcategories/jobcategories.component';
 import { JobFooterComponent } from './landing/job/job-footer/job-footer.component';
-
 
 @NgModule({
   declarations: [
