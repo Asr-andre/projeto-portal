@@ -1,25 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-// search module
 import { NgPipesModule } from 'ngx-pipes';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
-import { LayoutsModule } from "./layouts/layouts.module";
-
-
 import { HttpClient, HTTP_INTERCEPTORS, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { environment } from '../environments/environment';
 import { initFirebaseBackend } from './authUtils';
 import { ErrorInterceptor } from './core/helpers/error.interceptor';
 import { JwtInterceptor } from './core/helpers/jwt.interceptor';
-
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
-
 import { rootReducer } from './store';
 import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
@@ -46,7 +37,6 @@ if (environment.defaultauth === 'firebase') {
         BrowserAnimationsModule,
         BrowserModule,
         AppRoutingModule,
-        LayoutsModule,
         StoreModule.forRoot(rootReducer),
         StoreDevtoolsModule.instrument({
             maxAge: 25, 
