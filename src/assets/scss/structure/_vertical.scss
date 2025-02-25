@@ -954,47 +954,6 @@
 }
 
 
-@if $sidebar-img {
-
-    //sidebar-images
-    .sidebar-background {
-        position: absolute;
-        z-index: -1;
-        height: 100%;
-        width: 100%;
-        display: block;
-        top: 0;
-        left: 0;
-        background-size: cover;
-        background-position: 50%;
-        opacity: .07;
-    }
-
-    [data-sidebar-image="img-1"] {
-        .sidebar-background {
-            background-image: url('../../images/sidebar/img-1.jpg');
-        }
-    }
-
-    [data-sidebar-image="img-2"] {
-        .sidebar-background {
-            background-image: url('../../images/sidebar/img-2.jpg');
-        }
-    }
-
-    [data-sidebar-image="img-3"] {
-        .sidebar-background {
-            background-image: url('../../images/sidebar/img-3.jpg');
-        }
-    }
-
-    [data-sidebar-image="img-4"] {
-        .sidebar-background {
-            background-image: url('../../images/sidebar/img-4.jpg');
-        }
-    }
-
-}
 
 [data-layout="semibox"] {
 
