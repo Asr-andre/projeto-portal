@@ -9,7 +9,7 @@ import { JobComponent } from './job/job.component';
 const routes: Routes = [
   {
     path: "",
-    component: IndexComponent
+    component: JobComponent
   },
   {
     path: "nft",
