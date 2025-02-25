@@ -7,13 +7,16 @@
                     <h4>Portal Facilitador</h4>
                 </a>
 
+                @if(mostrarTelas)
+                {
                 <button class="navbar-toggler py-0 fs-20 text-body" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation" (click)="collapse.toggle()">
                     <i class="mdi mdi-menu"></i>
                 </button>
 
-                <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed" class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed" class="collapse navbar-collapse"
+                    id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto mt-2 mt-lg-0" id="navbar-example">
 
                         <li class="nav-item">
@@ -52,22 +55,24 @@
                                 class="ri-user-3-line align-bottom me-1"></i> Fale com a Empresa</a>
                     </div>
                 </div>
-
+                }
             </div>
         </nav>
+
         <section class="section job-hero-section bg-light pb-0" id="hero">
             <div class="container">
                 <div class="row justify-content-between align-items-center">
                     <div class="col-lg-6">
                         <div>
                             <h1 class="display-6 fw-semibold text-capitalize mb-3 lh-base">Bem-vindo!</h1>
-                            <p class="lead text-muted lh-base mb-4">Digite seu CPF e descubra como podemos ajudar você a negociar com mais tranquilidade e confiança!</p>
+                            <p class="lead text-muted lh-base mb-4">Digite seu CPF e descubra como podemos ajudar você a
+                                negociar com mais tranquilidade e confiança!</p>
                             <form action="#" class="job-panel-filter">
                                 <div class="row g-md-0 g-2">
                                     <div class="col-md-8">
                                         <div>
                                             <input type="search" id="job-title" class="form-control filter-input-box"
-                                                placeholder="Digite o seu cpf...">
+                                                placeholder="000.000.000-00">
                                         </div>
                                     </div>
 
@@ -79,7 +84,7 @@
                                     </div>
                                 </div>
                             </form>
-
+                            <!--
                             <ul class="treding-keywords list-inline mb-0 mt-3 fs-13">
                                 <li class="list-inline-item text-danger fw-semibold"><i
                                         class="mdi mdi-tag-multiple-outline align-middle"></i> Trending Keywords:</li>
@@ -88,6 +93,7 @@
                                 <li class="list-inline-item"><a href="javascript:void(0)">Manager,</a></li>
                                 <li class="list-inline-item"><a href="javascript:void(0)">Senior</a></li>
                             </ul>
+                            -->
                         </div>
                     </div>
 
