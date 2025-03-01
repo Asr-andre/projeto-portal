@@ -10,6 +10,7 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { LandingRoutingModule } from "./landing-routing.module";
 import { SharedModule } from '../shared/shared.module';
 import { JobComponent } from './job/job.component';
+import { DiretivasModule } from '../conf/directve.module';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { JobComponent } from './job/job.component';
   imports: [
     CommonModule,
     NgbCarouselModule,
+    DiretivasModule,
     LandingRoutingModule,
     SharedModule,
     NgbTooltipModule,

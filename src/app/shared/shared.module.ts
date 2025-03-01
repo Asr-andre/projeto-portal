@@ -7,13 +7,14 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { CountUpModule } from 'ngx-countup';
 import { ScrollspyDirective } from './scrollspy.directive';
 import { LandingScrollspyDirective } from './landingscrollspy.directive';
+import { BlogComponent } from './landing/blog/blog.component';
+import { CandidatesComponent } from './landing/candidates/candidates.component';
+import { FindjobsComponent } from './landing/findjobs/findjobs.component';
+import { JobFooterComponent } from './landing/job-footer/job-footer.component';
+import { JobcategoriesComponent } from './landing/jobcategories/jobcategories.component';
+import { ProcessComponent } from './landing/process/process.component';
 
-import { ProcessComponent } from './landing/job/process/process.component';
-import { FindjobsComponent } from './landing/job/findjobs/findjobs.component';
-import { CandidatesComponent } from './landing/job/candidates/candidates.component';
-import { BlogComponent } from './landing/job/blog/blog.component';
-import { JobcategoriesComponent } from './landing/job/jobcategories/jobcategories.component';
-import { JobFooterComponent } from './landing/job/job-footer/job-footer.component';
+
 
 @NgModule({
   declarations: [
